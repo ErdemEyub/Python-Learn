@@ -20,4 +20,18 @@ age = current_year - year_of_birth
 next_year = current_year + 1
 print(f"Yasiniz: {age}, Gelecek Yil ... Yasinda Olacaksiniz")
 
-# Koddaki hata ne? 
+import datetime
+
+first_name = input("First name: ")
+last_name = input("Last name: ")
+year_of_birth = int(input("Year of birth: "))
+
+print(f"Ad Karakter Sayisi: {len(first_name)},Soyad Karakter Sayisi: {len(last_name)}")
+full_name = f"{first_name[0]}. {last_name}".upper()
+print(full_name)
+
+current_year = datetime.datetime.now().year
+age = current_year - year_of_birth
+next_year = current_year + 1
+
+print(f"Yasiniz: {age}, Gelecek Yil ... Yasinda Olacaksiniz: {age + 1}")
